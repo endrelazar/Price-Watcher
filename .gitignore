@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+.vscode
+config.json
+products.db
+arertesito.log

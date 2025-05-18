@@ -1,0 +1,16 @@
+{
+  "name_selectors": [
+    "h1.page-title",
+    "h1.sc-d571b66f-0.dScdZY",
+    "h1.h1-placeholder",
+    "h1.product_name"
+  ],
+  "price_selectors": [
+    "span.sc-e0c7d9f7-0.bPkjPs",
+    "span.price-box__primary-price__value.js-price-box__primary-price__value",
+    "p.product-new-price",
+    "div.price-value",
+    ".product-price",
+    "#itemPrice"
+  ]
+}

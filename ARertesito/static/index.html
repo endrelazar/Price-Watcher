@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árfigyelő</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Árfigyelő</h1>
+    <div id="supported-shops">
+        <p>Az árfigyelő az alábbi webáruházakkal működik:</p>
+            <div class="shop-logos">
+                <a href="https://www.emag.hu/" target="_blank">
+                    <img src="icons/emag.svg" alt="eMAG" title="eMAG" height="32">
+                </a>
+                <a href="https://www.mediamarkt.hu/" target="_blank">
+                    <img src="icons/media.svg" alt="MediaMarkt" title="MediaMarkt" height="100">
+                </a>
+                <a href="https://www.alza.hu/" target="_blank">
+                    <img src="icons/alza.svg" alt="Alza" title="Alza" height="32">
+                </a>
+                <a href="https://aqua.hu/" target="_blank">
+                    <img src="icons/aqua.svg" alt="Aqua" title="Aqua" height="32">
+                </a>
+                <!-- További logók ide -->
+    </div>
+    <div id="product-form">
+        <h2>Új termék hozzáadása</h2>
+        <input type="text" id="product-url" placeholder="Termék URL">
+        <input type="number" id="target-price" placeholder="Célár">
+        <input type="number" id="notify-interval" placeholder="Időnkénti értesítés (percben) Alapérték 1nap">
+        <input type="text" id="useremail" placeholder="Add meg az Email címed!">
+        <button id="add-button" type="button">Termék hozzáadása</button>
+    </div>
+    <div id="product-list">
+        <h2>Termékek</h2>
+        <ul id="products"></ul>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
