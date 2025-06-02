@@ -1,6 +1,4 @@
-
 FROM python:3.13-slim
-FROM mcr.microsoft.com/playwright/python:v1.52.0
 
 WORKDIR /app
 
@@ -8,6 +6,10 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
+
+# Csak Chromium böngésző telepítése Playwright-hoz
+RUN pip install playwright && \
+    playwright install --with-deps chromium
 
 # Kód bemásolása
 COPY . /app
